@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Current Projects</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 data-en="Our Current Research Projects" data-es="Nuestros Proyectos de Investigación">
+      Our Current Research Projects
+    </h1>
+    <p data-en="Click “Learn More” to see details and sign up."
+       data-es="Haz clic en “Más Información” para ver detalles e inscribirte.">
+      Click “Learn More” to see details and sign up.
+    </p>
+    <button id="lang-toggle">Español</button>
+  </header>
+
+  <main>
+    <section id="projects-list">
+    <div class="project-card">
+        <h2 data-en="Project Cochera" data-es="Proyecto Cochera">Project Cochera</h2>
+        <p 
+        data-en="90-minute session at our AirBnB, involves video recording participants moving across different cameras."
+        data-es="Sesión de 90 minutos en nuestro AirBnB, que incluye grabación en video de los participantes moviéndose frente a diferentes cámaras."
+        >
+        90 minute session at our AirBnB, involves video recording participants moving across different cameras.
+        </p>
+        <a href="project-cochera.html" class="learn-more-button" data-en="Learn More" data-es="Más Información">Learn More</a>
+    </div>
+
+    <div class="project-card">
+        <h2 data-en="Project Casas" data-es="Proyecto Casas">Project Casas</h2>
+        <p 
+        data-en="3-4 hour session recording videos of home settings with participants performing regular home activities."
+        data-es="Sesión de 3 a 4 horas grabando videos en entornos domésticos con participantes realizando actividades habituales."
+        >
+        3-4 hour session recoridng videos of home settings with participants performing regualr hone activities.
+        </p>
+        <a href="project-casas.html" class="learn-more-button" data-en="Learn More" data-es="Más Información">Learn More</a>
+    </div>
+
+    <div class="project-card">
+        <h2 data-en="Project Space" data-es="Proyecto Espacio">Project Space</h2>
+        <p 
+        data-en="30 minute on-site or remote session recording participants performing specific simple tasks."
+        data-es="Sesión de 30 minutos en sitio o remota grabando a participantes realizando tareas simples específicas."
+        >
+        30 minute on-site or remote session recording paritcipants performing specific simple tasks. 
+        </p>
+        <a href="project-space.html" class="learn-more-button" data-en="Learn More" data-es="Más Información">Learn More</a>
+    </div>
+    </section>
+
+
+    <section id="about-us" class="about-us-section">
+      <h2 data-en="About Centific" data-es="Acerca de Centific">About Centific</h2>
+      <p data-en="Centific is dedicated to advancing health and community wellness through innovative research and trusted surveys. Our mission is to gather valuable insights while respecting your privacy and time."
+         data-es="Centific está dedicado a promover la salud y el bienestar comunitario a través de investigaciones innovadoras y encuestas confiables. Nuestra misión es recopilar información valiosa respetando su privacidad y tiempo.">
+        Centific is dedicated to advancing health and community wellness through innovative research and trusted surveys. Our mission is to gather valuable insights while respecting your privacy and time.
+      </p>
+      <p data-en="We partner with local communities, organizations, and experts to ensure our studies are meaningful and impactful. Your participation helps create healthier, stronger communities."
+         data-es="Nos asociamos con comunidades locales, organizaciones y expertos para garantizar que nuestros estudios sean significativos y tengan un impacto real. Su participación ayuda a crear comunidades más saludables y fuertes.">
+        We partner with local communities, organizations, and experts to ensure our studies are meaningful and impactful. Your participation helps create healthier, stronger communities.
+      </p>
+
+      <p id="about-link"></p>
+    </section>
+
+    <section class="feedback-form">
+      <h2>Feedback</h2>
+      <p>We'd love to hear from you. Please leave your feedback below:</p>
+      <form action="https://formspree.io/f/mldnqnww" method="POST">
+        <textarea name="message" required placeholder="Your feedback"></textarea>
+        <input type="email" name="_replyto" placeholder="Your email (optional)">
+        <button type="submit">Send Feedback</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p data-en="All rights reserved." data-es="Todos los derechos reservados.">All rights reserved.</p>
+  </footer>
+
+  <!-- ONLY THIS SCRIPT -->
+  <script src="project.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Space</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back-button" data-en="← Back to Projects" data-es="← Volver a Proyectos">← Back to Projects</a>
+    <h1 data-en="Project Space" data-es="Proyecto Space">Project Space</h1>
+    <button id="lang-toggle">Español</button>
+  </header>
+
+  <main>
+    <section class="project-details">
+      <p data-en="Apologies, this project is now closed." data-es="Lo siento, cerramos este proyeco.">
+        Apologies, this project is now closed.
+      </p>
+      <a href="https://example.com/form3" class="signup-button" target="_blank" data-en="Sign Up Now" data-es="Regístrate Ahora">Sign Up Now</a>
+    </section>
+
+    <section class="referral-form">
+      <h2 data-en="Referral" data-es="Referidos">Referral</h2>
+      <p data-en="Invite a friend and earn rewards! Add your referrals below:" data-es="¡Invita a un amigo y gana recompensas! Ponga tus referridos abajo:">
+        Invite a friend and earn rewards! Add your referrals below:
+      </p>
+      <input type="text" id="referral-link" readonly value="https://oneforma.aidaform.com/referral-form-space-onsite-redmond" />
+      <div class="referral-buttons">
+        <button id="copy-btn" data-en="Copy Link" data-es="Copiar Enlace">Copy Link</button>
+        <a id="open-link" class="signup-button" target="_blank" href="https://oneforma.aidaform.com/referral-form-space-onsite-redmond" data-en="Open Link" data-es="Abrir Enlace">Open Link</a>
+      </div>
+      <p id="copy-message"></p>
+    </section>
+
+    <section class="contact-info">
+      <h2 data-en="Contact Us" data-es="Contáctanos">Contact Us</h2>
+      <p data-en="For questions about this study, please email us at:" data-es="Para preguntas sobre este estudio, envíanos un correo a:">
+        For questions about this study, please email us at:
+      </p>
+      <a href="mailto:edge_ai_space@centific.com">edge_ai_space@centific.com</a>
+    </section>
+  </main>
+
+  <footer>
+    <p data-en="All rights reserved." data-es="Todos los derechos reservados.">All rights reserved.</p>
+  </footer>
+
+  <script src="project.js" defer></script>
+</body>
+</html>
