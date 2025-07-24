@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   let currentLang = localStorage.getItem("lang") || "en";
   const langButton = document.getElementById("lang-toggle");
-  const ADMIN_PASSWORD = "admin123"; // Use this password to access admin mode
+  const ADMIN_PASSWORD = "admin"; // Use this password to access admin mode
 
   function applyLanguage(lang) {
     document.querySelectorAll("[data-en]").forEach((el) => {
@@ -240,7 +240,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function showAdminComments() {
-    const password = prompt(currentLang === "en" ? "Enter admin password (use 'admin123'):" : "Ingrese la contraseña de administrador (use 'admin123'):");
+    const password = prompt(currentLang === "en" ? "Enter admin password:" : "Ingrese la contraseña de administrador:");
     if (password !== ADMIN_PASSWORD) {
       alert(currentLang === "en" ? "Incorrect password!" : "¡Contraseña incorrecta!");
       return;
