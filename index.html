@@ -1,90 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Current Projects</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centific Research Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <nav class="nav-menu">
+    <ul>
+      <li><a href="#projects-list" data-en="Projects" data-es="Proyectos">Projects</a></li>
+      <li><a href="#why-participate" data-en="Why Participate" data-es="Por qué Participar">Why Participate</a></li>
+      <li><a href="#about-us" data-en="About" data-es="Acerca">About</a></li>
+      <li><a href="#comments" data-en="Comments" data-es="Comentarios">Comments</a></li>
+      <li><a href="#faq" data-en="FAQ" data-es="Preguntas Frecuentes">FAQ</a></li>
+      <li><a href="#feedback" data-en="Feedback" data-es="Retroalimentación">Feedback</a></li>
+    </ul>
+  </nav>
   <header>
-    <h1 data-en="Our Current Research Projects" data-es="Nuestros Proyectos de Investigación">
-      Our Current Research Projects
-    </h1>
-    <p data-en="Click “Learn More” to see details and sign up."
-       data-es="Haz clic en “Más Información” para ver detalles e inscribirte.">
-      Click “Learn More” to see details and sign up.
-    </p>
-    <button id="lang-toggle">Español</button>
+    <h1 data-en="Our Current Research Projects" data-es="Nuestros Proyectos de Investigación Actuales">Our Current Research Projects</h1>
+    <p data-en="Join us in advancing health and community wellness through innovative research." data-es="Únase a nosotros para avanzar en la salud y el bienestar comunitario a través de la investigación innovadora.">Join us in advancing health and community wellness through innovative research.</p>
+    <button id="lang-toggle" aria-label="Toggle language">Español</button>
   </header>
-
   <main>
     <section id="projects-list">
-    <div class="project-card">
+      <div class="project-card">
+        <i class="fas fa-video" aria-hidden="true"></i>
         <h2 data-en="Project Cochera" data-es="Proyecto Cochera">Project Cochera</h2>
-        <p 
-        data-en="90-minute session at our AirBnB, involves video recording participants moving across different cameras."
-        data-es="Sesión de 90 minutos en nuestro AirBnB, que incluye grabación en video de los participantes moviéndose frente a diferentes cámaras."
-        >
-        90 minute session at our AirBnB, involves video recording participants moving across different cameras.
-        </p>
+        <p data-en="90-minute session at our AirBnB, involves video recording participants moving across different cameras." data-es="Sesión de 90 minutos en nuestro AirBnB, que incluye grabación en video de los participantes moviéndose frente a diferentes cámaras.">90-minute session at our AirBnB, involves video recording participants moving across different cameras.</p>
         <a href="project-cochera.html" class="learn-more-button" data-en="Learn More" data-es="Más Información">Learn More</a>
-    </div>
-
-    <div class="project-card">
+      </div>
+      <div class="project-card">
+        <i class="fas fa-home" aria-hidden="true"></i>
         <h2 data-en="Project Casas" data-es="Proyecto Casas">Project Casas</h2>
-        <p 
-        data-en="3-4 hour session recording videos of home settings with participants performing regular home activities."
-        data-es="Sesión de 3 a 4 horas grabando videos en entornos domésticos con participantes realizando actividades habituales."
-        >
-        3-4 hour session recoridng videos of home settings with participants performing regualr hone activities.
-        </p>
+        <p data-en="3-4 hour session recording videos of home settings with participants performing regular home activities." data-es="Sesión de 3 a 4 horas grabando videos en entornos domésticos con participantes realizando actividades habituales.">3-4 hour session recording videos of home settings with participants performing regular home activities.</p>
         <a href="project-casas.html" class="learn-more-button" data-en="Learn More" data-es="Más Información">Learn More</a>
-    </div>
-
-    <div class="project-card">
+      </div>
+      <div class="project-card">
+        <i class="fas fa-tasks" aria-hidden="true"></i>
         <h2 data-en="Project Space" data-es="Proyecto Espacio">Project Space</h2>
-        <p 
-        data-en="30 minute on-site or remote session recording participants performing specific simple tasks."
-        data-es="Sesión de 30 minutos en sitio o remota grabando a participantes realizando tareas simples específicas."
-        >
-        30 minute on-site or remote session recording paritcipants performing specific simple tasks. 
-        </p>
+        <p data-en="30 minute on-site or remote session recording participants performing specific simple tasks." data-es="Sesión de 30 minutos en sitio o remota grabando a participantes realizando tareas simples específicas.">30 minute on-site or remote session recording participants performing specific simple tasks.</p>
         <a href="project-space.html" class="learn-more-button" data-en="Learn More" data-es="Más Información">Learn More</a>
-    </div>
+      </div>
     </section>
-
-
+    <section id="why-participate" class="why-participate-section">
+      <h2 data-en="Why Participate?" data-es="¿Por qué Participar?">Why Participate?</h2>
+      <div class="why-participate-content">
+        <div class="why-item">
+          <i class="fas fa-heart"></i>
+          <h3 data-en="Make a Difference" data-es="Hacer una Diferencia">Make a Difference</h3>
+          <p data-en="Contribute to important research that improves community wellness." data-es="Contribuya a investigaciones importantes que mejoran el bienestar comunitario.">Contribute to important research that improves community wellness.</p>
+        </div>
+        <div class="why-item">
+          <i class="fas fa-dollar-sign"></i>
+          <h3 data-en="Earn Compensation" data-es="Gana Compensación">Earn Compensation</h3>
+          <p data-en="Receive compensation for your time and effort." data-es="Reciba compensación por su tiempo y esfuerzo.">Receive compensation for your time and effort.</p>
+        </div>
+        <div class="why-item">
+          <i class="fas fa-lightbulb"></i>
+          <h3 data-en="Shape the Future" data-es="Dar Forma al Futuro">Shape the Future</h3>
+          <p data-en="Help shape the future of health and technology." data-es="Ayude a dar forma al futuro de la salud y la tecnología.">Help shape the future of health and technology.</p>
+        </div>
+      </div>
+    </section>
     <section id="about-us" class="about-us-section">
       <h2 data-en="About Centific" data-es="Acerca de Centific">About Centific</h2>
-      <p data-en="Centific is dedicated to advancing health and community wellness through innovative research and trusted surveys. Our mission is to gather valuable insights while respecting your privacy and time."
-         data-es="Centific está dedicado a promover la salud y el bienestar comunitario a través de investigaciones innovadoras y encuestas confiables. Nuestra misión es recopilar información valiosa respetando su privacidad y tiempo.">
-        Centific is dedicated to advancing health and community wellness through innovative research and trusted surveys. Our mission is to gather valuable insights while respecting your privacy and time.
-      </p>
-      <p data-en="We partner with local communities, organizations, and experts to ensure our studies are meaningful and impactful. Your participation helps create healthier, stronger communities."
-         data-es="Nos asociamos con comunidades locales, organizaciones y expertos para garantizar que nuestros estudios sean significativos y tengan un impacto real. Su participación ayuda a crear comunidades más saludables y fuertes.">
-        We partner with local communities, organizations, and experts to ensure our studies are meaningful and impactful. Your participation helps create healthier, stronger communities.
-      </p>
-
-      <p id="about-link"></p>
+      <div class="about-content">
+        <div class="about-text">
+          <p data-en="Centific is dedicated to advancing health and community wellness through innovative research and trusted surveys. Our mission is to gather valuable insights while respecting your privacy and time."
+             data-es="Centific está dedicado a promover la salud y el bienestar comunitario a través de investigaciones innovadoras y encuestas confiables. Nuestra misión es recopilar información valiosa respetando su privacidad y tiempo.">
+            Centific is dedicated to advancing health and community wellness through innovative research and trusted surveys. Our mission is to gather valuable insights while respecting your privacy and time.
+          </p>
+          <p data-en="We partner with local communities, organizations, and experts to ensure our studies are meaningful and impactful. Your participation helps create healthier, stronger communities."
+             data-es="Nos asociamos con comunidades locales, organizaciones y expertos para garantizar que nuestros estudios sean significativos y tengan un impacto real. Su participación ayuda a crear comunidades más saludables y fuertes.">
+            We partner with local communities, organizations, and experts to ensure our studies are meaningful and impactful. Your participation helps create healthier, stronger communities.
+          </p>
+          <p id="about-link"></p>
+        </div>
+        <div class="about-image">
+          <img src="images/centific1.png" alt="Centific Team" data-en="Centific Team" data-es="Equipo de Centific">
+        </div>
+      </div>
     </section>
-
-    <section class="feedback-form">
-      <h2>Feedback</h2>
-      <p>We'd love to hear from you. Please leave your feedback below:</p>
+    <section id="comments" class="comments-section">
+      <h2 data-en="Share Your Experience" data-es="Comparte Tu Experiencia">Share Your Experience</h2>
+      <div class="comment-form">
+        <input type="text" id="comment-name" placeholder="Your name" data-en="Your name" data-es="Tu nombre" required>
+        <textarea id="comment-input" placeholder="Your comment" data-en="Your comment" data-es="Tu comentario" required></textarea>
+        <div class="rating">
+          <span class="star" data-value="1">★</span>
+          <span class="star" data-value="2">★</span>
+          <span class="star" data-value="3">★</span>
+          <span class="star" data-value="4">★</span>
+          <span class="star" data-value="5">★</span>
+        </div>
+        <button id="submit-comment" data-en="Submit Comment" data-es="Enviar Comentario">Submit Comment</button>
+      </div>
+      <div id="comment-list"></div>
+    </section>
+    <section id="faq" class="faq-section">
+      <h2 data-en="Frequently Asked Questions" data-es="Preguntas Frecuentes">Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-icon">+</span>
+          <span data-en="What is the purpose of these research projects?" data-es="¿Cuál es el propósito de estos proyectos de investigación?">What is the purpose of these research projects?</span>
+        </button>
+        <div class="faq-answer" data-en="These projects aim to gather valuable insights to improve health and community wellness through innovative research. Our studies focus on real-world applications to enhance technologies and services that benefit communities globally." data-es="Estos proyectos tienen como objetivo recopilar información valiosa para mejorar la salud y el bienestar comunitario a través de investigaciones innovadoras. Nuestros estudios se centran en aplicaciones del mundo real para mejorar tecnologías y servicios que benefician a las comunidades globalmente.">These projects aim to gather valuable insights to improve health and community wellness through innovative research. Our studies focus on real-world applications to enhance technologies and services that benefit communities globally.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-icon">+</span>
+          <span data-en="How can I participate in a project?" data-es="¿Cómo puedo participar en un proyecto?">How can I participate in a project?</span>
+        </button>
+        <div class="faq-answer" data-en="Click on the 'Learn More' button for each project to see details and sign up. You’ll be guided through a simple registration process, and our team will contact you with further details." data-es="Haga clic en el botón 'Más Información' para cada proyecto para ver detalles y registrarse. Será guiado a través de un proceso de registro simple, y nuestro equipo se pondrá en contacto con más detalles.">Click on the 'Learn More' button for each project to see details and sign up. You’ll be guided through a simple registration process, and our team will contact you with further details.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-icon">+</span>
+          <span data-en="What are the eligibility criteria for participation?" data-es="¿Cuáles son los criterios de elegibilidad para la participación?">What are the eligibility criteria for participation?</span>
+        </button>
+        <div class="faq-answer" data-en="Eligibility criteria vary by project. Some may require specific age groups, locations, or other qualifications. Please check the details of each project for specific requirements." data-es="Los criterios de elegibilidad varían según el proyecto. Algunos pueden requerir grupos de edad específicos, ubicaciones u otras calificaciones. Por favor, consulte los detalles de cada proyecto para requisitos específicos.">Eligibility criteria vary by project. Some may require specific age groups, locations, or other qualifications. Please check the details of each project for specific requirements.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-icon">+</span>
+          <span data-en="How is my privacy protected?" data-es="¿Cómo se protege mi privacidad?">How is my privacy protected?</span>
+        </button>
+        <div class="faq-answer" data-en="We prioritize your privacy. All data is securely stored, and participants will review a detailed privacy and consent form before any session. Your information is never shared without your consent." data-es="Priorizamos su privacidad. Todos los datos se almacenan de forma segura, y los participantes revisarán un formulario detallado de privacidad y consentimiento antes de cualquier sesión. Su información nunca se comparte sin su consentimiento.">We prioritize your privacy. All data is securely stored, and participants will review a detailed privacy and consent form before any session. Your information is never shared without your consent.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-icon">+</span>
+          <span data-en="What happens after I sign up?" data-es="¿Qué pasa después de que me inscribo?">What happens after I sign up?</span>
+        </button>
+        <div class="faq-answer" data-en="After signing up, you’ll receive a confirmation email with next steps, including scheduling details and any preparation needed. Our team will guide you through the process." data-es="Después de registrarse, recibirá un correo electrónico de confirmación con los próximos pasos, incluidos los detalles de programación y cualquier preparación necesaria. Nuestro equipo lo guiará a través del proceso.">After signing up, you’ll receive a confirmation email with next steps, including scheduling details and any preparation needed. Our team will guide you through the process.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-icon">+</span>
+          <span data-en="Why do you use Airbnb for data collection?" data-es="¿Por qué usan Airbnb para la recolección de datos?">Why do you use Airbnb for data collection?</span>
+        </button>
+        <div class="faq-answer" data-en="Our projects require collecting data in realistic at-home environments to ensure accurate and natural results. We use Airbnb to rent diverse home settings, allowing participants to contribute from authentic residential spaces. All rentals are managed directly through our company to ensure a secure and efficient process." data-es="Nuestros proyectos requieren recolectar datos en entornos domésticos reales para garantizar resultados precisos y naturales. Usamos Airbnb para alquilar diversos entornos domésticos, permitiendo a los participantes contribuir desde espacios residenciales auténticos. Todos los alquileres son gestionados directamente por nuestra empresa para garantizar un proceso seguro y eficiente.">Our projects require collecting data in realistic at-home environments to ensure accurate and natural results. We use Airbnb to rent diverse home settings, allowing participants to contribute from authentic residential spaces. All rentals are managed directly through our company to ensure a secure and efficient process.</div>
+      </div>
+    </section>
+    <section id="feedback" class="feedback-form">
+      <h2 data-en="Feedback" data-es="Comentarios">Feedback</h2>
+      <p data-en="We'd love to hear from you. Please leave your feedback below:" data-es="Nos encantaría saber de usted. Por favor, deje sus comentarios a continuación:">We'd love to hear from you. Please leave your feedback below:</p>
       <form action="https://formspree.io/f/mldnqnww" method="POST">
         <textarea name="message" required placeholder="Your feedback"></textarea>
         <input type="email" name="_replyto" placeholder="Your email (optional)">
-        <button type="submit">Send Feedback</button>
+        <button type="submit" data-en="Send Feedback" data-es="Enviar Comentario">Send Feedback</button>
       </form>
     </section>
   </main>
-
   <footer>
-    <p data-en="All rights reserved." data-es="Todos los derechos reservados.">All rights reserved.</p>
+    <div class="footer-links">
+      <button id="admin-comment-btn" data-en="Admin Mode" data-es="Modo Admin">Admin Mode</button>
+      <a href="privacy.html" data-en="Privacy Center" data-es="Centro de Privacidad">Privacy Center</a> |
+      <span data-en="All rights reserved." data-es="Todos los derechos reservados.">All rights reserved.</span>
+    </div>
   </footer>
-
-  <!-- ONLY THIS SCRIPT -->
-  <script src="project.js" defer></script>
+  <script src="project.js"></script>
 </body>
 </html>

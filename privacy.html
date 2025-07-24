@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Center</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .info-header {
+      padding: 3rem 1rem;
+      text-align: center;
+      background: var(--card-bg);
+      border-bottom: 4px solid var(--accentPrimary);
+      margin: 2rem 1rem;
+      border-radius: 12px;
+    }
+    .info-header h1 {
+      font-size: 2.5rem;
+      color: var(--accentPrimary);
+      margin-bottom: 0.5rem;
+    }
+    .info-header p {
+      font-size: 1.1rem;
+      color: #555;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .info-section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    .info-item {
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+    }
+    .info-question {
+      background: transparent;
+      color: var(--accentPrimary);
+      padding: 1rem;
+      border: none;
+      width: 100%;
+      text-align: left;
+      font-weight: 600;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      transition: color var(--transition-fast);
+    }
+    .info-question:hover {
+      color: var(--accent-hoverDarker);
+    }
+    .info-icon {
+      margin-right: 0.75rem;
+      font-size: 1.2rem;
+    }
+    .info-answer {
+      padding: 1.5rem;
+      color: #555;
+      font-size: 1rem;
+      line-height: 1.6;
+      display: none;
+      background: var(--bg-light);
+    }
+    .contact-link {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .contact-link a {
+      color: var(--accentPrimary);
+      font-weight: 600;
+      text-decoration: none;
+      transition: color var(--transition-fast);
+    }
+    .contact-link a:hover {
+      color: var(--accent-hoverDarker);
+      text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+      .info-header {
+        padding: 2rem 1rem;
+      }
+      .info-header h1 {
+        font-size: 2rem;
+      }
+      .info-section {
+        padding: 0.5rem;
+      }
+      .info-question {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav-menu">
+    <a href="index.html" class="back-button" data-en="← Back to Home" data-es="← Volver a Inicio">← Back to Home</a>
+    <button id="lang-toggle">Español</button>
+  </nav>
+
+  <main role="main">
+    <section class="info-header">
+      <h1 data-en="Information Center" data-es="Centro de Información">Information Center</h1>
+      <p data-en="Learn about how we handle your information and our commitment to transparency."
+         data-es="Conoce cómo manejamos tu información y nuestro compromiso con la transparencia.">
+        Learn about how we handle your information and our commitment to transparency.
+      </p>
+    </section>
+
+    <section class="info-section">
+      <div class="info-item">
+        <button class="info-question">
+          <span class="info-icon">+</span>
+          <span data-en="Our Data Handling Practices" data-es="Nuestras Prácticas de Manejo de Datos">Our Data Handling Practices</span>
+        </button>
+        <div class="info-answer" data-en="[Placeholder: Add details about data collection, storage, and usage policies.]"
+           data-es="[Marcador de posición: Agrega detalles sobre las políticas de recolección, almacenamiento y uso de datos.]">
+          [Placeholder: Add details about data collection, storage, and usage policies.]
+        </div>
+      </div>
+      <div class="info-item">
+        <button class="info-question">
+          <span class="info-icon">+</span>
+          <span data-en="NDA and Consent Information" data-es="Información sobre NDA y Consentimiento">NDA and Consent Information</span>
+        </button>
+        <div class="info-answer" data-en="[Placeholder: Add details from your NDA/ICF, such as participant agreements and consent processes.]"
+           data-es="[Marcador de posición: Agrega detalles de tu NDA/ICF, como acuerdos de participantes y procesos de consentimiento.]">
+          [Placeholder: Add details from NDA/ICF, such as participant agreements and consent processes.]
+        </div>
+      </div>
+      <div class="info-item">
+        <button class="info-question">
+          <span class="info-icon">+</span>
+          <span data-en="Your Information and You" data-es="Tu Información y Tú">Your Information and You</span>
+        </button>
+        <div class="info-answer" data-en="[Placeholder: Add information about user rights or data management options.]"
+           data-es="[Marcador de posición: Agrega información sobre los derechos del usuario o las opciones de gestión de datos.]">
+          [Placeholder: Add information about user rights or data management options.]
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <script src="project.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const questions = document.querySelectorAll(".info-question");
+      questions.forEach((question) => {
+        question.addEventListener("click", () => {
+          const answer = question.nextElementSibling;
+          const icon = question.querySelector(".info-icon");
+          if (answer.style.display === "block") {
+            answer.style.display = "none";
+            icon.textContent = "+";
+          } else {
+            answer.style.display = "block";
+            icon.textContent = "-";
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
